@@ -6,7 +6,7 @@ Official repository for the AAAI 2024 paper **[NuScenes-QA: A Multi-modal Visual
 
 ## :fire: News
 
-- `2023.12.09`  Our paper is accepted by AAA! 2024! 
+- `2023.12.09`  Our paper is accepted by AAAI 2024! 
 - `2023.09.04`  Our NuScenes-QA dataset v1.0 released.
 
 ## :hourglass_flowing_sand: To Do
