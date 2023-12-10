@@ -1,11 +1,12 @@
-# NuScenes-QA
+# [AAAI 2024] NuScenes-QA
 
-Official repository for the paper **[NuScenes-QA: A Multi-modal Visual Question Answering Benchmark for Autonomous Driving Scenario](https://arxiv.org/pdf/2305.14836.pdf)**.
+Official repository for the AAAI 2024 paper **[NuScenes-QA: A Multi-modal Visual Question Answering Benchmark for Autonomous Driving Scenario](https://arxiv.org/pdf/2305.14836.pdf)**.
 
 ![DataConstruction](docs/data_construction.png)
 
 ## :fire: News
 
+- `2023.12.09`  Our paper is accepted by AAA! 2024! 
 - `2023.09.04`  Our NuScenes-QA dataset v1.0 released.
 
 ## :hourglass_flowing_sand: To Do
