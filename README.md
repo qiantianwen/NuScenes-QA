@@ -6,15 +6,15 @@ Official repository for the AAAI 2024 paper **[NuScenes-QA: A Multi-modal Visual
 
 ## :fire: News
 
+- `2024.11.01`  CenterPoint feature released. 
 - `2024.10.11`  Training and Testing code released.
-
 - `2023.12.09`  Our paper is accepted by AAAI 2024! 
 - `2023.09.04`  Our NuScenes-QA dataset v1.0 released.
 
 ## :hourglass_flowing_sand: To Do
 
 - [x] Release question & anwswer data
-- [ ] Release visual feature
+- [x] Release visual feature
 - [x] Release training and testing code
 
 ## :running: Getting Started
@@ -23,7 +23,33 @@ Official repository for the AAAI 2024 paper **[NuScenes-QA: A Multi-modal Visual
 
 We have released our question-answer annotations, please download it from [HERE](https://drive.google.com/drive/folders/1jIkICT23wZWZYPrWCa0x-ubjpClSzOuU?usp=sharing).
 
-For the visual data, you can download the origin nuScenes dataset from [HERE](https://www.nuscenes.org/download), and prepare the data refer to this [LINK](https://mmdetection3d.readthedocs.io/en/v0.16.0/datasets/nuscenes_det.html). As an alternative, you can also download our provided object-level features extracted using pre-trained detection models from [HERE]() (to be released soon).
+For the visual data, you can download **CenterPoint** feature that we have extracted from [HERE](https://drive.google.com/file/d/1TNsK6cpQ4pd9fH1s7WFxTSXilrT2uNYb/view?usp=sharing). As an alternative, you can also download the origin nuScenes dataset from [HERE](https://www.nuscenes.org/download), and extract the object-level features refer to this [LINK](https://mmdetection3d.readthedocs.io/en/v0.16.0/datasets/nuscenes_det.html) with different backbones. For specific details on feature extraction, you can refer to the **Visual Feature Extraction** and **Object Embedding** sections of our paper.
+
+The folder structure should be organized as follows before training.
+
+```
+NuScenes-QA
++-- configs/
+|   +-- butd.yaml                    
+|   +-- mcan_small.yaml
++-- data/
+|   +-- questions/				# downloaded
+|   |   +-- NuScenes_train_questions.json
+|   |   +-- NuScenes_val_questions.json
+|   +-- features/ 				# downloaded or extracted
+|   |   +-- CenterPoint/
+|   |   |   +-- xxx.npz
+|   |   |   +-- ...
+|   |   +-- BEVDet/
+|   |   |   +-- xxx.npz
+|   |   |   +-- ...
+|   |   +-- MSMDFusion/
+|   |   |   +-- xxx.npz
+|   |   |   +-- ...
++-- src/
++-- run.py
+```
+
 ### Installation
 
 The following packages are required to build the project:
